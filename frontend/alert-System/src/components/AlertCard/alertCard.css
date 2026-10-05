@@ -1,0 +1,13 @@
+.alertCard {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(170, 41, 41);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 6px 4px red;
+}
+.alertCard:hover {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.864);
+  color: rgb(235, 235, 235);
+}
