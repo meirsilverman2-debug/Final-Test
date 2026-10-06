@@ -18,7 +18,6 @@ export default function RequestPage() {
     const [searchRequest, setSearchRequest] = useState<string>("")
     const [filteredAlerts, setFilteredAlerts] = useState<alert[]>([])
 
-
       useEffect(() => {
         fetch("http://localhost:3000/api/alerts")
         .then(res => res.json())
@@ -26,10 +25,10 @@ export default function RequestPage() {
       }, [])
 
 
-      
     useEffect(() => {
     const filtered = alerts.filter(alert => alert.displayName.includes(searchRequest))
     setFilteredAlerts(filtered)
+
     }, [searchRequest])
     
   return (
@@ -37,7 +36,6 @@ export default function RequestPage() {
         <NavBar/>
         <input type="text" value={searchRequest} onChange={e => setSearchRequest(e.target.value)}/>
         {filteredAlerts.map((alert: alert, index: number) =>(<AlertCard arena={alert.arena} description={alert.description} displayName={alert.displayName} lat={alert.lat} lon={alert.lon} priority={alert.priority} status={alert.status} key={index} />))}
-        
     </div>
 
   )
