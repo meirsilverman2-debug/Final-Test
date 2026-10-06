@@ -8,6 +8,7 @@ export default function NavBar() {
       <button  className="links" onClick={() => navigate("/")}>Home</button>
       <button  className="links" onClick={() => navigate("/map")}>Alert Map</button>
       <button  className="links" onClick={() => navigate("/alerts")}>Alerts</button>
+      <button  className="links" onClick={() => navigate("/requests")}>Requests</button>
     </div>
   )
 }

@@ -22,6 +22,8 @@ export default function AlertsList() {
     .then(data => setAlerts(data));
   }, [])
 
+
+
   return (
     <div className="alertsList">
         {alerts.map((alert: alert, index: number) =>(<AlertCard arena={alert.arena} description={alert.description} displayName={alert.displayName} lat={alert.lat} lon={alert.lon} priority={alert.priority} status={alert.status} key={index} />))}
