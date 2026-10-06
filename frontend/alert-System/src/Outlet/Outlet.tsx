@@ -1,10 +1,10 @@
 import NavBar from "../components/NavBar/NavBar";
 
 
-export default function WelcomePage() {
+export default function Outlet() {
   return (
     <div>
-     <NavBar/>
+        <NavBar/>
     </div>
   )
 }

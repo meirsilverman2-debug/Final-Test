@@ -1,15 +1,22 @@
 import { useState } from 'react'
 import './App.css'
 import WelcomePage from './pages/WelcomePage'
-import AlertsMap from './components/AlertsMap/AlertsMap'
+import AlertDisplayPage from './pages/AlertDisplayPage'
+import { Route, Routes } from 'react-router'
+import MapPage from './pages/MapPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <WelcomePage/>
-  {/* <AlertsMap alerts={<AlertsList}/> */}
+    <Routes>
+     
+      <Route path='/' element={<WelcomePage/>}/>
+      <Route path='/alerts' element={<AlertDisplayPage/>}/>
+      <Route path='/map' element={<MapPage/>}/>
+    
+    </Routes>
     </>
   )
 }

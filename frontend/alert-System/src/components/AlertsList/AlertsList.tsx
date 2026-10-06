@@ -12,12 +12,6 @@ type alert = {
     lat: number  
 };
 
-
-
- 
-    
-  
-
 export default function AlertsList() {
 
   const [alerts, setAlerts] = useState<alert[]>([]) 

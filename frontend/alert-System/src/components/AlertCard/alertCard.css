@@ -4,6 +4,11 @@
   background-color: rgb(170, 41, 41);
   color: rgb(0, 0, 0);
   text-shadow: 1px 6px 4px red;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .alertCard:hover {
   border: 2px solid rgb(255, 255, 255);
